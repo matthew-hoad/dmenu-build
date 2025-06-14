@@ -14,9 +14,9 @@
 If you trust me, then grab the latest release from the releases page.
 
 ```shell
-tar -xvf name_of_release.tar.gz
+tar -xf name_of_release.tar.gz
 cd name_of_release
-make install
+cp -r dist/* $HOME/.local/
 ```
 
 Or, to build it yourself:
