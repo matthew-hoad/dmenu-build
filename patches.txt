@@ -1,1 +1,1 @@
-https://tools.suckless.org/dmenu/patches/center/dmenu-center-20250407-b1e217b.diff
+https://tools.suckless.org/dmenu/patches/center/dmenu-center-5.2.diff
