@@ -6,9 +6,9 @@
 
 >[!NOTE]
 >By default `make install` will install to `~/.local` (binaries to `~/.local/bin`, man pages to `~/.local/share/man` etc.).
->To change this, simply pass the `target` parameter like so: 
+>To change this, simply pass the `dest` parameter like so: 
 > ```shell
-> make install target=/usr
+> make install dest=/usr
 > ```
 
 If you trust me, then grab the latest release from the releases page.
@@ -21,17 +21,18 @@ make install
 
 Or, to build it yourself:
 
-Requirements
+Requirements:
 - podman / docker
-- if podman, a compose plugin
+
+Steps:
 - Choose which patches you want to apply from https://suckless.org/dmenu/patches
 - Copy the patch file URLs into patches.txt (one per-line)
 - Then just start the build!
     ```shell
-    make podman-build-install
+    make podman-build-install dest=/path/to/install
     ```
     or
     ```shell
-    make docker-build-install
+    make docker-build-install dest=/path/to/install
     ```
 
